@@ -1,0 +1,9 @@
+C:\Users\ccten\source\repos\proyeco1_ocl\bin\Debug\proyeco1_ocl.exe.config
+C:\Users\ccten\source\repos\proyeco1_ocl\bin\Debug\proyeco1_ocl.exe
+C:\Users\ccten\source\repos\proyeco1_ocl\bin\Debug\proyeco1_ocl.pdb
+C:\Users\ccten\source\repos\proyeco1_ocl\obj\Debug\proyeco1_ocl.csprojAssemblyReference.cache
+C:\Users\ccten\source\repos\proyeco1_ocl\obj\Debug\proyeco1_ocl.Properties.Resources.resources
+C:\Users\ccten\source\repos\proyeco1_ocl\obj\Debug\proyeco1_ocl.csproj.GenerateResource.cache
+C:\Users\ccten\source\repos\proyeco1_ocl\obj\Debug\proyeco1_ocl.exe
+C:\Users\ccten\source\repos\proyeco1_ocl\obj\Debug\proyeco1_ocl.pdb
+C:\Users\ccten\source\repos\proyeco1_ocl\obj\Debug\proyeco1_ocl.forx.resources
