@@ -2,186 +2,234 @@
   <Token>
       <Nombre>reservada</Nombre>
       <Valor>CONJ</Valor>
-      <Fila>2</Fila>
+      <Fila>3</Fila>
       <Columna>1</Columna>
   </Token>
   <Token>
       <Nombre>Simbolo</Nombre>
       <Valor>:</Valor>
-      <Fila>2</Fila>
+      <Fila>3</Fila>
       <Columna>5</Columna>
   </Token>
   <Token>
       <Nombre>Identificador</Nombre>
       <Valor>vocales</Valor>
-      <Fila>2</Fila>
+      <Fila>3</Fila>
       <Columna>8</Columna>
   </Token>
   <Token>
       <Nombre>Simbolo</Nombre>
       <Valor>-></Valor>
-      <Fila>2</Fila>
+      <Fila>3</Fila>
       <Columna>15</Columna>
   </Token>
   <Token>
       <Nombre>Identificador</Nombre>
       <Valor>a,e,i,o,u</Valor>
-      <Fila>2</Fila>
+      <Fila>3</Fila>
       <Columna>18</Columna>
   </Token>
   <Token>
       <Nombre>Simbolo</Nombre>
       <Valor>;</Valor>
-      <Fila>2</Fila>
+      <Fila>3</Fila>
       <Columna>27</Columna>
   </Token>
   <Token>
       <Nombre>reservada</Nombre>
       <Valor>CONJ</Valor>
-      <Fila>3</Fila>
+      <Fila>4</Fila>
       <Columna>1</Columna>
   </Token>
   <Token>
       <Nombre>Simbolo</Nombre>
       <Valor>:</Valor>
-      <Fila>3</Fila>
+      <Fila>4</Fila>
       <Columna>5</Columna>
   </Token>
   <Token>
       <Nombre>Identificador</Nombre>
       <Valor>otrasLetras</Valor>
-      <Fila>3</Fila>
+      <Fila>4</Fila>
       <Columna>8</Columna>
   </Token>
   <Token>
       <Nombre>Simbolo</Nombre>
       <Valor>-></Valor>
-      <Fila>3</Fila>
+      <Fila>4</Fila>
       <Columna>19</Columna>
   </Token>
   <Token>
       <Nombre>Identificador</Nombre>
       <Valor>m,r,c,l,g,s</Valor>
-      <Fila>3</Fila>
+      <Fila>4</Fila>
       <Columna>22</Columna>
   </Token>
   <Token>
       <Nombre>Simbolo</Nombre>
       <Valor>;</Valor>
-      <Fila>3</Fila>
+      <Fila>4</Fila>
       <Columna>33</Columna>
   </Token>
   <Token>
       <Nombre>reservada</Nombre>
       <Valor>CONJ</Valor>
-      <Fila>4</Fila>
+      <Fila>5</Fila>
       <Columna>1</Columna>
   </Token>
   <Token>
       <Nombre>Simbolo</Nombre>
       <Valor>:</Valor>
-      <Fila>4</Fila>
+      <Fila>5</Fila>
       <Columna>5</Columna>
   </Token>
   <Token>
       <Nombre>Identificador</Nombre>
       <Valor>abecedario</Valor>
-      <Fila>4</Fila>
+      <Fila>5</Fila>
       <Columna>8</Columna>
   </Token>
   <Token>
       <Nombre>Simbolo</Nombre>
       <Valor>-></Valor>
-      <Fila>4</Fila>
+      <Fila>5</Fila>
       <Columna>18</Columna>
   </Token>
   <Token>
       <Nombre>Identificador</Nombre>
       <Valor>a~z</Valor>
-      <Fila>4</Fila>
+      <Fila>5</Fila>
       <Columna>21</Columna>
   </Token>
   <Token>
       <Nombre>Simbolo</Nombre>
       <Valor>;</Valor>
-      <Fila>4</Fila>
+      <Fila>5</Fila>
       <Columna>24</Columna>
   </Token>
   <Token>
       <Nombre>reservada</Nombre>
       <Valor>CONJ</Valor>
-      <Fila>5</Fila>
+      <Fila>6</Fila>
       <Columna>1</Columna>
   </Token>
   <Token>
       <Nombre>Simbolo</Nombre>
       <Valor>:</Valor>
-      <Fila>5</Fila>
+      <Fila>6</Fila>
       <Columna>5</Columna>
   </Token>
   <Token>
       <Nombre>Identificador</Nombre>
       <Valor>conjnum</Valor>
-      <Fila>5</Fila>
+      <Fila>6</Fila>
       <Columna>8</Columna>
   </Token>
   <Token>
       <Nombre>Simbolo</Nombre>
       <Valor>-></Valor>
-      <Fila>5</Fila>
+      <Fila>6</Fila>
       <Columna>15</Columna>
   </Token>
   <Token>
       <Nombre>Identificador</Nombre>
       <Valor>2~6</Valor>
-      <Fila>5</Fila>
+      <Fila>6</Fila>
       <Columna>18</Columna>
   </Token>
   <Token>
       <Nombre>Simbolo</Nombre>
       <Valor>;</Valor>
-      <Fila>5</Fila>
+      <Fila>6</Fila>
       <Columna>21</Columna>
   </Token>
   <Token>
       <Nombre>reservada</Nombre>
       <Valor>CONJ</Valor>
-      <Fila>6</Fila>
+      <Fila>7</Fila>
       <Columna>1</Columna>
   </Token>
   <Token>
       <Nombre>Simbolo</Nombre>
       <Valor>:</Valor>
-      <Fila>6</Fila>
+      <Fila>7</Fila>
       <Columna>5</Columna>
   </Token>
   <Token>
       <Nombre>Identificador</Nombre>
       <Valor>digito</Valor>
-      <Fila>6</Fila>
+      <Fila>7</Fila>
       <Columna>8</Columna>
   </Token>
   <Token>
       <Nombre>Simbolo</Nombre>
       <Valor>-></Valor>
-      <Fila>6</Fila>
+      <Fila>7</Fila>
       <Columna>14</Columna>
   </Token>
   <Token>
       <Nombre>Identificador</Nombre>
       <Valor>0~9</Valor>
-      <Fila>6</Fila>
+      <Fila>7</Fila>
       <Columna>17</Columna>
   </Token>
   <Token>
       <Nombre>Simbolo</Nombre>
       <Valor>;</Valor>
-      <Fila>6</Fila>
+      <Fila>7</Fila>
       <Columna>20</Columna>
   </Token>
   <Token>
       <Nombre>ID asignacion exp reg</Nombre>
-      <Valor>operaciones</Valor>
+      <Valor>Expresion1</Valor>
+      <Fila>12</Fila>
+      <Columna>1</Columna>
+  </Token>
+  <Token>
+      <Nombre>Simbolo</Nombre>
+      <Valor>-></Valor>
+      <Fila>12</Fila>
+      <Columna>12</Columna>
+  </Token>
+  <Token>
+      <Nombre>Cadena regex</Nombre>
+      <Valor> . | "Los " "El " . + | vocales otrasLetras * | abecedario "_"</Valor>
+      <Fila>12</Fila>
+      <Columna>14</Columna>
+  </Token>
+  <Token>
+      <Nombre>Simbolo</Nombre>
+      <Valor>;</Valor>
+      <Fila>12</Fila>
+      <Columna>76</Columna>
+  </Token>
+  <Token>
+      <Nombre>ID asignacion exp reg</Nombre>
+      <Valor>Expresion2</Valor>
+      <Fila>13</Fila>
+      <Columna>1</Columna>
+  </Token>
+  <Token>
+      <Nombre>Simbolo</Nombre>
+      <Valor>-></Valor>
+      <Fila>13</Fila>
+      <Columna>12</Columna>
+  </Token>
+  <Token>
+      <Nombre>Cadena regex</Nombre>
+      <Valor> . + abecedario  . conjnum ? . ":" + abecedario</Valor>
+      <Fila>13</Fila>
+      <Columna>14</Columna>
+  </Token>
+  <Token>
+      <Nombre>Simbolo</Nombre>
+      <Valor>;</Valor>
+      <Fila>13</Fila>
+      <Columna>61</Columna>
+  </Token>
+  <Token>
+      <Nombre>ID asignacion exp reg</Nombre>
+      <Valor>Expresion3</Valor>
       <Fila>14</Fila>
       <Columna>1</Columna>
   </Token>
@@ -189,42 +237,66 @@
       <Nombre>Simbolo</Nombre>
       <Valor>-></Valor>
       <Fila>14</Fila>
+      <Columna>12</Columna>
+  </Token>
+  <Token>
+      <Nombre>Cadena regex</Nombre>
+      <Valor> . . . . . . * | abecedario "_" + conjnum ">" + conjnum "es " | "TRUE" "FALSE" "." </Valor>
+      <Fila>14</Fila>
+      <Columna>14</Columna>
+  </Token>
+  <Token>
+      <Nombre>Simbolo</Nombre>
+      <Valor>;</Valor>
+      <Fila>14</Fila>
+      <Columna>97</Columna>
+  </Token>
+  <Token>
+      <Nombre>ID asignacion exp reg</Nombre>
+      <Valor>operaciones</Valor>
+      <Fila>15</Fila>
+      <Columna>1</Columna>
+  </Token>
+  <Token>
+      <Nombre>Simbolo</Nombre>
+      <Valor>-></Valor>
+      <Fila>15</Fila>
       <Columna>13</Columna>
   </Token>
   <Token>
       <Nombre>Cadena regex</Nombre>
-      <Valor> . + digito + . |"+" |"-" |"*" "/" +digito</Valor>
-      <Fila>14</Fila>
+      <Valor> . + digito + . | "+" | "-" | "*" "/" + digito</Valor>
+      <Fila>15</Fila>
       <Columna>15</Columna>
   </Token>
   <Token>
       <Nombre>Simbolo</Nombre>
       <Valor>;</Valor>
-      <Fila>14</Fila>
-      <Columna>57</Columna>
+      <Fila>15</Fila>
+      <Columna>61</Columna>
   </Token>
   <Token>
       <Nombre>Cadena a evaluar</Nombre>
       <Valor>Expresion1</Valor>
-      <Fila>23</Fila>
+      <Fila>24</Fila>
       <Columna>1</Columna>
   </Token>
   <Token>
       <Nombre>Simbolo</Nombre>
       <Valor>-></Valor>
-      <Fila>23</Fila>
+      <Fila>24</Fila>
       <Columna>12</Columna>
   </Token>
   <Token>
       <Nombre>Cadena</Nombre>
       <Valor>los murcielagos llevan_en_su_nombre_todas_las_vocales.</Valor>
-      <Fila>23</Fila>
+      <Fila>24</Fila>
       <Columna>17</Columna>
   </Token>
   <Token>
       <Nombre>Simbolo</Nombre>
       <Valor>;</Valor>
-      <Fila>23</Fila>
+      <Fila>24</Fila>
       <Columna>71</Columna>
   </Token>
 </ListaTokens>

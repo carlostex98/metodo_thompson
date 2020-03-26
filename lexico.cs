@@ -15,7 +15,7 @@ namespace proyeco1_ocl
             //for por toda la cadena
             int cl = 0;//cl actual
             int ln = 0;//ln actual
-            int e = 0;//estado
+            int e = -1;//estado
             int n = 0;//var de porcentaje
             string a1 = "";//var aux 1
             string a2 = "";//var aux 2
@@ -33,6 +33,18 @@ namespace proyeco1_ocl
 
                 switch (e)
                 {
+                    case -1:
+                        if (c=='{')
+                        {
+                            e = 0;
+                        }
+                        else if (c != ' ' && c != '\n' && c != '\t')//error
+                        {
+                            forx.lsx.in_error(Char.ToString(c), ln, cl);
+                            
+                        }
+                        break;
+
                     case 0://inicial->comentario,cadena, esp en blanco
                         if (c == '/' && v == '/')
                         {
@@ -54,6 +66,9 @@ namespace proyeco1_ocl
                             //estado de chunche
                             e = 14; i++; cl++;
 
+                        }else if (c=='}')
+                        {
+                            e = -1;
                         }
                         else if (c != ' ' && c != '\n' && c != '\t')//error
                         {

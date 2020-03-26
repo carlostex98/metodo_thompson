@@ -18,6 +18,12 @@ namespace proyeco1_ocl
             string[] g = { nombre, valor };
             conjuntos.AddLast(g);
         }
+        public void crea_vacio()
+        {
+            string[] g = { "vacio_vacio", "vacio" };
+            conjuntos.AddLast(g);
+        }
+
         public void in_xpr(string nombre, string valor)
         {
             string[] g = { nombre, valor };

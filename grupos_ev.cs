@@ -22,7 +22,7 @@ namespace proyeco1_ocl
          * solo grupo que es el unicial
          * de no ser asi no se compilara
          * 
-         * 
+         * las expresiones ? y + son convertidas a su equivalente con *
          * 
          */
 
@@ -40,7 +40,7 @@ namespace proyeco1_ocl
             grupo.Clear();
             aux.Clear();
 
-            cadena(rgx+" ");
+            cadena(rgx + " ");
             //nd();
             build_groups();
             prints();
@@ -194,31 +194,102 @@ namespace proyeco1_ocl
                     {
                         if (regex.ElementAt(i + 1)[1].Equals("lit") || regex.ElementAt(i + 1)[1].Equals("conj") || regex.ElementAt(i + 1)[1].Equals("grup"))
                         {
-                            string[] s = { "g" + x.ToString(), "grup", regex.ElementAt(i)[2] };
-                            string[] g = { "g" + x.ToString(), regex.ElementAt(i + 1)[0], regex.ElementAt(i + 1)[1], "_", "_", regex.ElementAt(i)[0] };
-                            grupo.AddLast(g);
 
-                            for (int j = 0; j < regex.Count; j++)
+                            if (regex.ElementAt(i)[0].Equals("+"))
                             {
-                                if (j == i)
+                                //en este punto se crean dos grupos
+                                //uno del asterisco
+                                //otro de la concatenacion
+                                string[] s = { "g" + ((x + 1).ToString()), "grup", regex.ElementAt(i)[2] };//este es el del final
+                                string[] g = { "g" + x.ToString(), regex.ElementAt(i + 1)[0], regex.ElementAt(i + 1)[1], "_", "_", "*" };
+                                grupo.AddLast(g);
+                                string[] gx = { "g" + (x + 1).ToString(), "g" + x.ToString(), "grup", "g" + x.ToString(), "grup", "." };
+                                grupo.AddLast(gx);
+                                for (int j = 0; j < regex.Count; j++)
                                 {
-                                    aux.AddLast(s);
-                                    j = j + 1;
+                                    if (j == i)
+                                    {
+                                        aux.AddLast(s);
+                                        j = j + 1;
+                                    }
+                                    else
+                                    {
+                                        aux.AddLast(regex.ElementAt(j));
+                                    }
                                 }
-                                else
+                                regex.Clear();
+                                for (int j = 0; j < aux.Count; j++)
                                 {
-                                    aux.AddLast(regex.ElementAt(j));
+                                    regex.AddLast(aux.ElementAt(j));
                                 }
+                                aux.Clear();
+                                i = 0;
+                                a = 1;
+                                x++;
+                                x++;
+
                             }
-                            regex.Clear();
-                            for (int j = 0; j < aux.Count; j++)
+                            else if (regex.ElementAt(i)[0].Equals("?"))
                             {
-                                regex.AddLast(aux.ElementAt(j));
+                                //solo se crea un grupo
+                                //lalala
+                                string[] s = { "g" + x.ToString(), "grup", regex.ElementAt(i)[2] };//grupo nuevo
+                                string[] g = { "g" + x.ToString(), regex.ElementAt(i + 1)[0], regex.ElementAt(i + 1)[1], "vacio_vacio", "grup", "|" };
+                                grupo.AddLast(g);
+                                for (int j = 0; j < regex.Count; j++)
+                                {
+                                    if (j == i)
+                                    {
+                                        aux.AddLast(s);
+                                        j = j + 1;
+                                    }
+                                    else
+                                    {
+                                        aux.AddLast(regex.ElementAt(j));
+                                    }
+                                }
+                                regex.Clear();
+                                for (int j = 0; j < aux.Count; j++)
+                                {
+                                    regex.AddLast(aux.ElementAt(j));
+                                }
+                                aux.Clear();
+                                i = 0;
+                                a = 1;
+                                x++;
+
                             }
-                            aux.Clear();
-                            i = 0;
-                            a = 1;
-                            x++;
+                            else
+                            {
+                                string[] s = { "g" + x.ToString(), "grup", regex.ElementAt(i)[2] };
+                                string[] g = { "g" + x.ToString(), regex.ElementAt(i + 1)[0], regex.ElementAt(i + 1)[1], "_", "_", regex.ElementAt(i)[0] };
+                                grupo.AddLast(g);
+                                for (int j = 0; j < regex.Count; j++)
+                                {
+                                    if (j == i)
+                                    {
+                                        aux.AddLast(s);
+                                        j = j + 1;
+                                    }
+                                    else
+                                    {
+                                        aux.AddLast(regex.ElementAt(j));
+                                    }
+                                }
+                                regex.Clear();
+                                for (int j = 0; j < aux.Count; j++)
+                                {
+                                    regex.AddLast(aux.ElementAt(j));
+                                }
+                                aux.Clear();
+                                i = 0;
+                                a = 1;
+                                x++;
+                            }
+
+
+
+
                             //nd();
                         }
                     }
