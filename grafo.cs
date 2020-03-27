@@ -78,6 +78,8 @@ namespace proyeco1_ocl
                     nodo n4 = new nodo();
                     nodo n5 = new nodo();
                     nodo n6 = new nodo();
+                    x++;
+                    //empezamos a marcar estados
                 }
                 else if (e[5].Equals("."))
                 {
