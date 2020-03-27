@@ -21,6 +21,7 @@ namespace proyeco1_ocl
         public static instrucciones ins = new instrucciones();
         public static grupos_ev grupos = new grupos_ev();
         public static enlazador enlace = new enlazador();
+        public static grafo _grafo = new grafo();
         string ruta = "";
         public forx()
         {
@@ -77,9 +78,32 @@ namespace proyeco1_ocl
                 if (saveFileDialog1.FileName != "")
                 {
                     // Saves the Image via a FileStream created by the OpenFile method.
-                    System.IO.FileStream fs = (System.IO.FileStream)saveFileDialog1.OpenFile();
+                    Encoding ascii = Encoding.ASCII;
+                    StreamWriter bw;
+                    try
+                    {
+                        bw = new StreamWriter(new FileStream(saveFileDialog1.FileName, FileMode.Create), ascii);
+                    }
+                    catch (IOException e2)
+                    {
+                        Console.WriteLine(e2.Message + "\n error.");
+                        return;
+                    }
 
-                    fs.Close();
+                    try
+                    {
+                        bw.Write(entrada.Text+" ");
+                        
+
+                    }
+                    catch (IOException e2)
+                    {
+                        Console.WriteLine(e2.Message + "\n Cannot write to file.");
+                        return;
+                    }
+                    bw.Close();
+
+                    //fs.Close();
                 }
                 else
                 {

@@ -46,6 +46,7 @@ namespace proyeco1_ocl
                 Console.WriteLine(e.Message + "\n error.");
                 return;
             }
+            
 
             try
             {

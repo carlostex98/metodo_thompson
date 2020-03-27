@@ -8,8 +8,8 @@ namespace proyeco1_ocl
 {
     public class grupos_ev
     {
-        LinkedList<string[]> regex = new LinkedList<string[]>();
-        LinkedList<string[]> grupo = new LinkedList<string[]>();
+        public LinkedList<string[]> regex = new LinkedList<string[]>();
+        public LinkedList<string[]> grupo = new LinkedList<string[]>();
         LinkedList<string[]> aux = new LinkedList<string[]>();
         //al final de nustro analisis es necesario transformar a+ -> a.a*
         /* aclaraciones:
