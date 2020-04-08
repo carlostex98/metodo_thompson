@@ -7,3 +7,4 @@ C:\Users\ccten\source\repos\proyeco1_ocl\obj\Debug\proyeco1_ocl.csproj.GenerateR
 C:\Users\ccten\source\repos\proyeco1_ocl\obj\Debug\proyeco1_ocl.exe
 C:\Users\ccten\source\repos\proyeco1_ocl\obj\Debug\proyeco1_ocl.pdb
 C:\Users\ccten\source\repos\proyeco1_ocl\obj\Debug\proyeco1_ocl.forx.resources
+C:\Users\ccten\source\repos\proyeco1_ocl\obj\Debug\proyeco1_ocl.img.resources

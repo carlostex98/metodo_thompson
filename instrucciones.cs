@@ -28,7 +28,7 @@ namespace proyeco1_ocl
         {
             string[] g = { nombre, valor };
             expresiones.AddLast(g);
-        }
+        } 
         public void in_cadena(string nombre, string valor)
         {
             string[] g = { nombre, valor };
@@ -51,6 +51,13 @@ namespace proyeco1_ocl
             {
                 Console.WriteLine(cadena.ElementAt(i)[0] + "," + cadena.ElementAt(i)[1]);
             }
+        }
+
+        public void limpiar()
+        {
+            conjuntos.Clear();
+            expresiones.Clear();
+            cadena.Clear();
         }
 
 

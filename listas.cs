@@ -10,15 +10,15 @@ namespace proyeco1_ocl
     public class listas
     {
         //dos listas, tokens y errores
-        private LinkedList<string[]> tokens = new LinkedList<string[]>();//struct: nombre,valor,fila,columna
-        private LinkedList<string[]> errores = new LinkedList<string[]>();//struct: valor,fila,columna
+        public LinkedList<string[]> tokens = new LinkedList<string[]>();//struct: nombre,valor,fila,columna
+        public LinkedList<string[]> errores = new LinkedList<string[]>();//struct: valor,fila,columna
         /*
          para:
             linea=ln
             columna=cl
         */
 
-
+             
         public void in_token(string nombre, string valor, int ln, int cl)
         {
             ln++; cl++;
@@ -114,6 +114,11 @@ namespace proyeco1_ocl
             tokens.Clear();
             errores.Clear();
         
+        }
+
+        public int erx()
+        {
+            return errores.Count();
         }
 
 

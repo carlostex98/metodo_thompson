@@ -25,7 +25,7 @@ namespace proyeco1_ocl
          * las expresiones ? y + son convertidas a su equivalente con *
          * 
          */
-
+          
         string in_cadena = "";
         string id = "";
         int g = 0;
@@ -43,8 +43,8 @@ namespace proyeco1_ocl
             cadena(rgx + " ");
             //nd();
             build_groups();
-            prints();
-            nd();
+            //prints();
+            //nd();
         }
 
         //primer paso es pasar la expresion a una lista
@@ -203,7 +203,7 @@ namespace proyeco1_ocl
                                 string[] s = { "g" + ((x + 1).ToString()), "grup", regex.ElementAt(i)[2] };//este es el del final
                                 string[] g = { "g" + x.ToString(), regex.ElementAt(i + 1)[0], regex.ElementAt(i + 1)[1], "_", "_", "*" };
                                 grupo.AddLast(g);
-                                string[] gx = { "g" + (x + 1).ToString(), "g" + x.ToString(), "grup", "g" + x.ToString(), "grup", "." };
+                                string[] gx = { "g" + (x + 1).ToString(), regex.ElementAt(i + 1)[0], regex.ElementAt(i + 1)[1], "g" + x.ToString(), "grup", "." };
                                 grupo.AddLast(gx);
                                 for (int j = 0; j < regex.Count; j++)
                                 {

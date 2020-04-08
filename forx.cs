@@ -14,7 +14,7 @@ using System.Windows.Forms;
 namespace proyeco1_ocl
 {
     public partial class forx : Form
-    {
+    { 
         //some_s nx = new some_s();
         public static lexico lx = new lexico();
         public static listas lsx = new listas();
@@ -22,6 +22,7 @@ namespace proyeco1_ocl
         public static grupos_ev grupos = new grupos_ev();
         public static enlazador enlace = new enlazador();
         public static grafo _grafo = new grafo();
+        public img imgs = new img();
         string ruta = "";
         public forx()
         {
@@ -58,10 +59,17 @@ namespace proyeco1_ocl
 
         private void button1_Click(object sender, EventArgs e)
         {
+            ins.limpiar();
             lsx.limpia_todo();
             lx.scanner_x(entrada.Text + "   ");
             lsx.reportar_xml();
-            enlace.iniciar_thompson();
+            if (lsx.erx() == 0)
+            {
+                enlace.iniciar_thompson();
+                imgs.Show();
+            }
+
+
             //ins.imprimir();
         }
 
@@ -92,8 +100,8 @@ namespace proyeco1_ocl
 
                     try
                     {
-                        bw.Write(entrada.Text+" ");
-                        
+                        bw.Write(entrada.Text + " ");
+
 
                     }
                     catch (IOException e2)
@@ -108,12 +116,67 @@ namespace proyeco1_ocl
                 else
                 {
 
+
+
                 }
 
+            }
+            else
+            {
+                Encoding ascii = Encoding.ASCII;
+                StreamWriter bw;
+                try
+                {
+                    bw = new StreamWriter(new FileStream(ruta, FileMode.Create), ascii);
+                    bw.WriteLine(entrada.Text);
+                }
+                catch (IOException e2)
+                {
+                    Console.WriteLine(e2.Message + "\n error.");
+                    return;
+                }
+                bw.Close();
             }
 
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.Filter = "ER Archivo|*.er";
+            saveFileDialog1.Title = "Guardar un ER";
+            saveFileDialog1.ShowDialog();
 
+            if (saveFileDialog1.FileName != "")
+            {
+                // Saves the Image via a FileStream created by the OpenFile method.
+                Encoding ascii = Encoding.ASCII;
+                StreamWriter bw;
+                try
+                {
+                    ruta = saveFileDialog1.FileName;
+                    bw = new StreamWriter(new FileStream(saveFileDialog1.FileName, FileMode.Create), ascii);
+                }
+                catch (IOException e2)
+                {
+                    Console.WriteLine(e2.Message + "\n error.");
+                    return;
+                }
+
+                try
+                {
+                    bw.Write(entrada.Text + " ");
+
+
+                }
+                catch (IOException e2)
+                {
+                    Console.WriteLine(e2.Message + "\n Cannot write to file.");
+                    return;
+                }
+                bw.Close();
+
+            }
+        }
     }
 }

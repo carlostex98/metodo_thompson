@@ -11,6 +11,8 @@ namespace proyeco1_ocl
         //enviamos los tokens a otra clase
         public void scanner_x(string cadena)
         {
+            
+
             //hacemos el mapeo de nustros caracteres
             //for por toda la cadena
             int cl = 0;//cl actual
@@ -109,9 +111,11 @@ namespace proyeco1_ocl
                             }
                             else
                             {
-                                //error
-                                forx.lsx.in_error(Char.ToString(c), ln, cl);
-                                e = 0;
+                                forx.lsx.in_token("Cadena a evaluar", a1, ln, cl - a1.Length);
+                                forx.lsx.in_token("Simbolo", ":", ln, cl);
+                                a2 = a1;
+                                a1 = "";
+                                e = 10;
                             }
                         }
                         else if (c == ' ' || c == '\n' || c == '\t')
@@ -146,15 +150,18 @@ namespace proyeco1_ocl
                             else
                             {
                                 //var a evaluar
-                                forx.lsx.in_token("Cadena a evaluar", a1, ln, cl - a1.Length);
-                                forx.lsx.in_token("Simbolo", "->", ln, cl);
-                                a2 = a1;
-                                a1 = "";
-                                e = 10;
+                                
                             }
 
                             //a2 = a1;
                             //forx.lsx.in_token("Flecha asignacion", a1, ln, cl - a1.Length);
+                        }else if (c==':')
+                        {
+                            forx.lsx.in_token("Cadena a evaluar", a1, ln, cl - a1.Length);
+                            forx.lsx.in_token("Simbolo", ":", ln, cl);
+                            a2 = a1;
+                            a1 = "";
+                            e = 10;
                         }
                         else
                         {
@@ -181,7 +188,11 @@ namespace proyeco1_ocl
                             }
                             else
                             {
-                                //error
+                                forx.lsx.in_token("Cadena a evaluar", a1, ln, cl - a1.Length);
+                                forx.lsx.in_token("Simbolo", ":", ln, cl);
+                                a2 = a1;
+                                a1 = "";
+                                e = 10;
                             }
 
                         }
@@ -309,7 +320,7 @@ namespace proyeco1_ocl
 
                         break;
 
-                    case 10:
+                    case 10: 
                         //cadena a evaluar
                         //Console.WriteLine("f");
                         if (c == '"')

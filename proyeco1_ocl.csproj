@@ -55,6 +55,12 @@
     </Compile>
     <Compile Include="grafo.cs" />
     <Compile Include="grupos_ev.cs" />
+    <Compile Include="img.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="img.Designer.cs">
+      <DependentUpon>img.cs</DependentUpon>
+    </Compile>
     <Compile Include="instrucciones.cs" />
     <Compile Include="lexico.cs" />
     <Compile Include="listas.cs" />
@@ -62,6 +68,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="forx.resx">
       <DependentUpon>forx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="img.resx">
+      <DependentUpon>img.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
